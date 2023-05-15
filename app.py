@@ -2,9 +2,9 @@ from flask import Flask, render_template, request
 import docx
 import re # модуль для работы с регулярными выражениями
 
-app = Flask(__name__)
+app = Flask(__name__) # cоздание объекта приложения Flask
 
-@app.route('/')
+@app.route('/') # определение маршрута 
 def index():
     return render_template("main.html")
 
